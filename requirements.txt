@@ -2,3 +2,5 @@ gradio
 torch
 numpy
 transformers
+opencv-python
+matplotlib
