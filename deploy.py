@@ -16,7 +16,7 @@ image=Build(
 )
 
 service = Service(
-	name="clipseg_deployment",
+	name="clipseg-deployment",
 	image=image,
 	ports=[{"port": 8080}],
 	resources=Resources(memory_limit=1500, memory_request=1000),
