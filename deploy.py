@@ -19,7 +19,7 @@ image=Build(
 service = Service(
 	name="clipseg-deployment",
 	image=image,
-	ports=[{"port": 8080}],
-	resources=Resources(memory_limit=4000, memory_request=1000),
+	ports=[{"port": 7943}],
+	resources=Resources(memory_limit=4000, memory_request=1000, ephemeral_storage_limit=8000, ephemeral_storage_request=8000),
 )
 service.deploy(workspace_fqn=args.workspace_fqn)
